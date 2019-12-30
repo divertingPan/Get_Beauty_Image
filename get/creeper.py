@@ -77,7 +77,7 @@ def get_tiezi_list(tiezi_url, session):
 if __name__ == '__main__':
 
     session = login()
-    keyword = input('请输入贴吧名称：')
+    keyword = input('请输入贴吧名称（例如：校花）：')
     # 构建贴吧主页url
     #index_url = 'https://tieba.baidu.com/f?kw={0}&tab=good'.format(keyword)
     index_url = 'https://tieba.baidu.com/f?kw={0}'.format(keyword)

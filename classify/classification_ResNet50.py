@@ -39,12 +39,13 @@ print(path);
 
 '''
 
+# 目录下图片自动分类测试
 import os
 import shutil
 
-testing_dir = '火车迷/';
-done_dir = 'done/';
-temp_dir = 'temp/';
+testing_dir = '火车迷/'; # 准备分类的图
+done_dir = 'done/';     # 属于火车类别的图会放进这里
+temp_dir = 'temp/';     # 和火车无关的图会扔进这里
 target_list = ['steam_locomotive', 'passenger_car', 'freight_car', 'electric_locomotive', 'bullet_train'];
 
 for maindir, subdir, file_name_list in os.walk(testing_dir):
